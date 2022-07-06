@@ -1,12 +1,30 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - prints lowercase alphabet
  *
- * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet_x10();
-	return (0);
+	char i;
+
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		_putchar(i);
+	}
+	_putchar('\n');
+}
+
+/**
+ * print_alphabet_x10 - prints alphabet 10 times
+ *
+ */
+void print_alphabet_x10(void)
+{
+	int i;
+
+	for (i = '0'; i <= '9'; i++)
+	{
+		print_alphabet();
+	}
 }
