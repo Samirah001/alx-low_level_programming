@@ -18,4 +18,14 @@ char *leet(char *c)
 	while (*(c + count) != '\0')
 	{
 		for (i = 0; i < 5; i++)
-
+		{
+			if (*(c + count) == low_letters[i] || *(c + count) == upp_letters[i])
+			{
+				*(c + count) = numbers[i];
+				break;
+			}
+		}
+		count++;
+	}
+	return (c);
+}
